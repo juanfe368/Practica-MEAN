@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <title>Pratica mean</title>
+</head>
+
+<body ng-app="practicamean">
+    <div>
+        <form>
+            Author:
+            <input type="text" ng-model="author">
+            <br>
+            <br> Title:
+            <input type="text" ng-model="title">
+            <br>
+            <br> Body:
+            <input type="author" ng-model="body">
+            <br>
+            <br>
+            <input type="submit" value="Submit" ng-click="submit()">
+        </form>
+    </div>
+    <div id="main">
+        <div ng-view></div>
+    </div>
+</body>
+
+</html>
